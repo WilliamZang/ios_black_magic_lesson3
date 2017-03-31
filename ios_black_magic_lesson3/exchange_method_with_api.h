@@ -12,7 +12,14 @@
 #include <stdio.h>
 #include <objc/runtime.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 void exchange_method_with_api(id obj);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* exchange_method_with_api_h */

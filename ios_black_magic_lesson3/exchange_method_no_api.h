@@ -11,6 +11,14 @@
 
 #include <stdio.h>
 
+#ifdef __cplusplus
+extern 'c' {
+#endif
+
 void exchange_method_no_api(void *obj);
 
+#ifdef __cplusplus
+}
+#endif
+    
 #endif /* exchange_method_with_no_api_h */

@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		08E2599DED78A0FD0459CF5B /* libPods-ios_black_magic_lesson3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6C41716010581B9640260F /* libPods-ios_black_magic_lesson3Tests.a */; };
+		2236D8161E8D658F005A19D7 /* static_binding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2236D8141E8D658F005A19D7 /* static_binding.cpp */; };
+		2236D8191E8D826C005A19D7 /* DynamicBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 2236D8181E8D826C005A19D7 /* DynamicBinding.m */; };
 		22E9B02A1E71C652004AFD81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9B0291E71C652004AFD81 /* main.m */; };
 		22E9B02D1E71C652004AFD81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9B02C1E71C652004AFD81 /* AppDelegate.m */; };
 		22E9B0301E71C652004AFD81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9B02F1E71C652004AFD81 /* ViewController.m */; };
 		22E9B0331E71C652004AFD81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E9B0311E71C652004AFD81 /* Main.storyboard */; };
 		22E9B0351E71C652004AFD81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E9B0341E71C652004AFD81 /* Assets.xcassets */; };
 		22E9B0381E71C652004AFD81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E9B0361E71C652004AFD81 /* LaunchScreen.storyboard */; };
-		22E9B04E1E71CB34004AFD81 /* runtime_no_api.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9B04D1E71CB34004AFD81 /* runtime_no_api.m */; };
+		22E9B04E1E71CB34004AFD81 /* runtime_test.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22E9B04D1E71CB34004AFD81 /* runtime_test.mm */; };
 		22E9B0511E71CB61004AFD81 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9B0501E71CB61004AFD81 /* TestClass.m */; };
 		22E9B0541E71CDB5004AFD81 /* exchange_method_no_api.c in Sources */ = {isa = PBXBuildFile; fileRef = 22E9B0521E71CDB5004AFD81 /* exchange_method_no_api.c */; };
 		22E9B0571E7599E7004AFD81 /* exchange_method_with_api.c in Sources */ = {isa = PBXBuildFile; fileRef = 22E9B0551E7599E7004AFD81 /* exchange_method_with_api.c */; };
@@ -33,6 +35,10 @@
 
 /* Begin PBXFileReference section */
 		1F9A1BE8144F32CF442E4F3F /* Pods-ios_black_magic_lesson3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_black_magic_lesson3.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios_black_magic_lesson3/Pods-ios_black_magic_lesson3.release.xcconfig"; sourceTree = "<group>"; };
+		2236D8141E8D658F005A19D7 /* static_binding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = static_binding.cpp; path = ../static_binding.cpp; sourceTree = "<group>"; };
+		2236D8151E8D658F005A19D7 /* static_binding.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = static_binding.hpp; path = ../static_binding.hpp; sourceTree = "<group>"; };
+		2236D8171E8D826C005A19D7 /* DynamicBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicBinding.h; sourceTree = "<group>"; };
+		2236D8181E8D826C005A19D7 /* DynamicBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicBinding.m; sourceTree = "<group>"; };
 		22E9B0251E71C652004AFD81 /* ios_black_magic_lesson3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_black_magic_lesson3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E9B0291E71C652004AFD81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22E9B02B1E71C652004AFD81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,7 +51,7 @@
 		22E9B0391E71C652004AFD81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22E9B03E1E71C653004AFD81 /* ios_black_magic_lesson3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_black_magic_lesson3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E9B0441E71C653004AFD81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22E9B04D1E71CB34004AFD81 /* runtime_no_api.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runtime_no_api.m; sourceTree = "<group>"; };
+		22E9B04D1E71CB34004AFD81 /* runtime_test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = runtime_test.mm; sourceTree = "<group>"; };
 		22E9B04F1E71CB61004AFD81 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
 		22E9B0501E71CB61004AFD81 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		22E9B0521E71CDB5004AFD81 /* exchange_method_no_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = exchange_method_no_api.c; sourceTree = "<group>"; };
@@ -117,6 +123,10 @@
 				22E9B0531E71CDB5004AFD81 /* exchange_method_no_api.h */,
 				22E9B0551E7599E7004AFD81 /* exchange_method_with_api.c */,
 				22E9B0561E7599E7004AFD81 /* exchange_method_with_api.h */,
+				2236D8141E8D658F005A19D7 /* static_binding.cpp */,
+				2236D8151E8D658F005A19D7 /* static_binding.hpp */,
+				2236D8171E8D826C005A19D7 /* DynamicBinding.h */,
+				2236D8181E8D826C005A19D7 /* DynamicBinding.m */,
 			);
 			path = ios_black_magic_lesson3;
 			sourceTree = "<group>";
@@ -133,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				22E9B0441E71C653004AFD81 /* Info.plist */,
-				22E9B04D1E71CB34004AFD81 /* runtime_no_api.m */,
+				22E9B04D1E71CB34004AFD81 /* runtime_test.mm */,
 			);
 			path = ios_black_magic_lesson3Tests;
 			sourceTree = "<group>";
@@ -360,7 +370,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E9B0571E7599E7004AFD81 /* exchange_method_with_api.c in Sources */,
+				2236D8161E8D658F005A19D7 /* static_binding.cpp in Sources */,
 				22E9B0511E71CB61004AFD81 /* TestClass.m in Sources */,
+				2236D8191E8D826C005A19D7 /* DynamicBinding.m in Sources */,
 				22E9B0301E71C652004AFD81 /* ViewController.m in Sources */,
 				22E9B0541E71CDB5004AFD81 /* exchange_method_no_api.c in Sources */,
 				22E9B02D1E71C652004AFD81 /* AppDelegate.m in Sources */,
@@ -372,7 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22E9B04E1E71CB34004AFD81 /* runtime_no_api.m in Sources */,
+				22E9B04E1E71CB34004AFD81 /* runtime_test.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
