@@ -10,6 +10,8 @@
 		08E2599DED78A0FD0459CF5B /* libPods-ios_black_magic_lesson3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6C41716010581B9640260F /* libPods-ios_black_magic_lesson3Tests.a */; };
 		2236D8161E8D658F005A19D7 /* static_binding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2236D8141E8D658F005A19D7 /* static_binding.cpp */; };
 		2236D8191E8D826C005A19D7 /* DynamicBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 2236D8181E8D826C005A19D7 /* DynamicBinding.m */; };
+		223873461E8E1D25002EF913 /* TestVarOrProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 223873451E8E1D25002EF913 /* TestVarOrProperty.m */; };
+		223873491E8E1F00002EF913 /* TestClass2.m in Sources */ = {isa = PBXBuildFile; fileRef = 223873481E8E1F00002EF913 /* TestClass2.m */; };
 		22E9B02A1E71C652004AFD81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9B0291E71C652004AFD81 /* main.m */; };
 		22E9B02D1E71C652004AFD81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9B02C1E71C652004AFD81 /* AppDelegate.m */; };
 		22E9B0301E71C652004AFD81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9B02F1E71C652004AFD81 /* ViewController.m */; };
@@ -39,6 +41,10 @@
 		2236D8151E8D658F005A19D7 /* static_binding.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = static_binding.hpp; path = ../static_binding.hpp; sourceTree = "<group>"; };
 		2236D8171E8D826C005A19D7 /* DynamicBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicBinding.h; sourceTree = "<group>"; };
 		2236D8181E8D826C005A19D7 /* DynamicBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicBinding.m; sourceTree = "<group>"; };
+		223873441E8E1D25002EF913 /* TestVarOrProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVarOrProperty.h; sourceTree = "<group>"; };
+		223873451E8E1D25002EF913 /* TestVarOrProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVarOrProperty.m; sourceTree = "<group>"; };
+		223873471E8E1F00002EF913 /* TestClass2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass2.h; sourceTree = "<group>"; };
+		223873481E8E1F00002EF913 /* TestClass2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass2.m; sourceTree = "<group>"; };
 		22E9B0251E71C652004AFD81 /* ios_black_magic_lesson3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_black_magic_lesson3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E9B0291E71C652004AFD81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22E9B02B1E71C652004AFD81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +125,8 @@
 				22E9B0281E71C652004AFD81 /* Supporting Files */,
 				22E9B04F1E71CB61004AFD81 /* TestClass.h */,
 				22E9B0501E71CB61004AFD81 /* TestClass.m */,
+				223873471E8E1F00002EF913 /* TestClass2.h */,
+				223873481E8E1F00002EF913 /* TestClass2.m */,
 				22E9B0521E71CDB5004AFD81 /* exchange_method_no_api.c */,
 				22E9B0531E71CDB5004AFD81 /* exchange_method_no_api.h */,
 				22E9B0551E7599E7004AFD81 /* exchange_method_with_api.c */,
@@ -127,6 +135,8 @@
 				2236D8151E8D658F005A19D7 /* static_binding.hpp */,
 				2236D8171E8D826C005A19D7 /* DynamicBinding.h */,
 				2236D8181E8D826C005A19D7 /* DynamicBinding.m */,
+				223873441E8E1D25002EF913 /* TestVarOrProperty.h */,
+				223873451E8E1D25002EF913 /* TestVarOrProperty.m */,
 			);
 			path = ios_black_magic_lesson3;
 			sourceTree = "<group>";
@@ -372,10 +382,12 @@
 				22E9B0571E7599E7004AFD81 /* exchange_method_with_api.c in Sources */,
 				2236D8161E8D658F005A19D7 /* static_binding.cpp in Sources */,
 				22E9B0511E71CB61004AFD81 /* TestClass.m in Sources */,
+				223873491E8E1F00002EF913 /* TestClass2.m in Sources */,
 				2236D8191E8D826C005A19D7 /* DynamicBinding.m in Sources */,
 				22E9B0301E71C652004AFD81 /* ViewController.m in Sources */,
 				22E9B0541E71CDB5004AFD81 /* exchange_method_no_api.c in Sources */,
 				22E9B02D1E71C652004AFD81 /* AppDelegate.m in Sources */,
+				223873461E8E1D25002EF913 /* TestVarOrProperty.m in Sources */,
 				22E9B02A1E71C652004AFD81 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

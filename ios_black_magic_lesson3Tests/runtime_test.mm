@@ -15,6 +15,7 @@
 #import "exchange_method_with_api.h"
 #import "static_binding.hpp"
 #import "DynamicBinding.h"
+#import "TestVarOrProperty.h"
 
 extern "C" {
     void exchange_method_no_api(id obj);
@@ -94,9 +95,19 @@ describe(@"runtime_test", ^{
         Class metaClass = object_getClass(classOfObj);
         Class superClass = class_getSuperclass(classOfObj);
         
-        class_getInstanceVariable(<#__unsafe_unretained Class cls#>, <#const char *name#>)
+    });
+    
+    it(@"is different from variable with property", ^{
+        TestVarOrProperty *obj = [TestVarOrProperty new];
+        int var1 = obj->var1;
+        id obj2 = obj.prop1;
+        id obj3 = [obj prop1];
+        [obj setProp1:nil];
         
-        object_getIvar(<#id obj#>, <#Ivar ivar#>)
+        Ivar ivar = class_getInstanceVariable([TestVarOrProperty class], "var1");
+        NSLog(@"Offset: %d", ivar_getOffset(ivar));
+        
+        [[TestVarOrProperty alloc] init];
     });
 });
 SpecEnd
