@@ -16,6 +16,7 @@
 #import "static_binding.hpp"
 #import "DynamicBinding.h"
 #import "TestVarOrProperty.h"
+#import "PrivateVariables.h"
 
 extern "C" {
     void exchange_method_no_api(id obj);
@@ -109,5 +110,60 @@ describe(@"runtime_test", ^{
         
         [[TestVarOrProperty alloc] init];
     });
+    
+    
 });
+
+
 SpecEnd
+
+class CPPClassA {
+public:
+    int a(int a);
+};
+
+class CPPClassB : public CPPClassA {
+    
+};
+
+class CPPClassC : public CPPClassB {
+public:
+    int a(int a);
+};
+
+int CPPClassA::a(int a) {
+    return a * a;
+}
+
+int CPPClassC::a(int a) {
+    return CPPClassA::a(a);
+}
+
+@interface OCClassA : NSObject
+
+- (int)a:(int)a;
+@end
+
+@interface OCClassB : OCClassA
+
+@end
+
+@interface OCClassC : OCClassB
+
+- (int)a:(int)a;
+@end
+
+@implementation OCClassA
+
+- (int)a:(int)a { return a * a; }
+
+@end
+
+@implementation OCClassB
+@end
+
+@implementation OCClassC
+
+- (int)a:(int)a { return [super a:a]; }
+
+@end

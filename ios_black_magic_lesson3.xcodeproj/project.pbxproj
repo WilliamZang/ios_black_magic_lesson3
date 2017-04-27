@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		08E2599DED78A0FD0459CF5B /* libPods-ios_black_magic_lesson3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6C41716010581B9640260F /* libPods-ios_black_magic_lesson3Tests.a */; };
+		221626D21EA9427A00DED206 /* PrivateVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = 221626D11EA9427A00DED206 /* PrivateVariables.m */; };
+		221626F61EAA076F00DED206 /* runtime_test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 221626F51EAA076F00DED206 /* runtime_test2.m */; };
+		221626F91EAA414900DED206 /* MethodOverload.m in Sources */ = {isa = PBXBuildFile; fileRef = 221626F81EAA414900DED206 /* MethodOverload.m */; };
+		221626FC1EAA436000DED206 /* MethodOverloadWhenRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 221626FB1EAA436000DED206 /* MethodOverloadWhenRuntime.m */; };
 		2236D8161E8D658F005A19D7 /* static_binding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2236D8141E8D658F005A19D7 /* static_binding.cpp */; };
 		2236D8191E8D826C005A19D7 /* DynamicBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 2236D8181E8D826C005A19D7 /* DynamicBinding.m */; };
 		223873461E8E1D25002EF913 /* TestVarOrProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 223873451E8E1D25002EF913 /* TestVarOrProperty.m */; };
 		223873491E8E1F00002EF913 /* TestClass2.m in Sources */ = {isa = PBXBuildFile; fileRef = 223873481E8E1F00002EF913 /* TestClass2.m */; };
+		227843931EB126A600400AA8 /* runtime_test3.m in Sources */ = {isa = PBXBuildFile; fileRef = 227843921EB126A600400AA8 /* runtime_test3.m */; };
 		22E9B02A1E71C652004AFD81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9B0291E71C652004AFD81 /* main.m */; };
 		22E9B02D1E71C652004AFD81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9B02C1E71C652004AFD81 /* AppDelegate.m */; };
 		22E9B0301E71C652004AFD81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E9B02F1E71C652004AFD81 /* ViewController.m */; };
@@ -37,6 +42,13 @@
 
 /* Begin PBXFileReference section */
 		1F9A1BE8144F32CF442E4F3F /* Pods-ios_black_magic_lesson3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_black_magic_lesson3.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios_black_magic_lesson3/Pods-ios_black_magic_lesson3.release.xcconfig"; sourceTree = "<group>"; };
+		221626D01EA9427A00DED206 /* PrivateVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateVariables.h; sourceTree = "<group>"; };
+		221626D11EA9427A00DED206 /* PrivateVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateVariables.m; sourceTree = "<group>"; };
+		221626F51EAA076F00DED206 /* runtime_test2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runtime_test2.m; sourceTree = "<group>"; };
+		221626F71EAA414900DED206 /* MethodOverload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodOverload.h; sourceTree = "<group>"; };
+		221626F81EAA414900DED206 /* MethodOverload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodOverload.m; sourceTree = "<group>"; };
+		221626FA1EAA436000DED206 /* MethodOverloadWhenRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodOverloadWhenRuntime.h; sourceTree = "<group>"; };
+		221626FB1EAA436000DED206 /* MethodOverloadWhenRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodOverloadWhenRuntime.m; sourceTree = "<group>"; };
 		2236D8141E8D658F005A19D7 /* static_binding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = static_binding.cpp; path = ../static_binding.cpp; sourceTree = "<group>"; };
 		2236D8151E8D658F005A19D7 /* static_binding.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = static_binding.hpp; path = ../static_binding.hpp; sourceTree = "<group>"; };
 		2236D8171E8D826C005A19D7 /* DynamicBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicBinding.h; sourceTree = "<group>"; };
@@ -45,6 +57,8 @@
 		223873451E8E1D25002EF913 /* TestVarOrProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVarOrProperty.m; sourceTree = "<group>"; };
 		223873471E8E1F00002EF913 /* TestClass2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass2.h; sourceTree = "<group>"; };
 		223873481E8E1F00002EF913 /* TestClass2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass2.m; sourceTree = "<group>"; };
+		227843921EB126A600400AA8 /* runtime_test3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runtime_test3.m; sourceTree = "<group>"; };
+		227843941EB2194000400AA8 /* test.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = test.java; sourceTree = "<group>"; };
 		22E9B0251E71C652004AFD81 /* ios_black_magic_lesson3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_black_magic_lesson3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E9B0291E71C652004AFD81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22E9B02B1E71C652004AFD81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +151,12 @@
 				2236D8181E8D826C005A19D7 /* DynamicBinding.m */,
 				223873441E8E1D25002EF913 /* TestVarOrProperty.h */,
 				223873451E8E1D25002EF913 /* TestVarOrProperty.m */,
+				221626D01EA9427A00DED206 /* PrivateVariables.h */,
+				221626D11EA9427A00DED206 /* PrivateVariables.m */,
+				221626F71EAA414900DED206 /* MethodOverload.h */,
+				221626F81EAA414900DED206 /* MethodOverload.m */,
+				221626FA1EAA436000DED206 /* MethodOverloadWhenRuntime.h */,
+				221626FB1EAA436000DED206 /* MethodOverloadWhenRuntime.m */,
 			);
 			path = ios_black_magic_lesson3;
 			sourceTree = "<group>";
@@ -154,6 +174,9 @@
 			children = (
 				22E9B0441E71C653004AFD81 /* Info.plist */,
 				22E9B04D1E71CB34004AFD81 /* runtime_test.mm */,
+				221626F51EAA076F00DED206 /* runtime_test2.m */,
+				227843921EB126A600400AA8 /* runtime_test3.m */,
+				227843941EB2194000400AA8 /* test.java */,
 			);
 			path = ios_black_magic_lesson3Tests;
 			sourceTree = "<group>";
@@ -385,7 +408,10 @@
 				223873491E8E1F00002EF913 /* TestClass2.m in Sources */,
 				2236D8191E8D826C005A19D7 /* DynamicBinding.m in Sources */,
 				22E9B0301E71C652004AFD81 /* ViewController.m in Sources */,
+				221626D21EA9427A00DED206 /* PrivateVariables.m in Sources */,
+				221626FC1EAA436000DED206 /* MethodOverloadWhenRuntime.m in Sources */,
 				22E9B0541E71CDB5004AFD81 /* exchange_method_no_api.c in Sources */,
+				221626F91EAA414900DED206 /* MethodOverload.m in Sources */,
 				22E9B02D1E71C652004AFD81 /* AppDelegate.m in Sources */,
 				223873461E8E1D25002EF913 /* TestVarOrProperty.m in Sources */,
 				22E9B02A1E71C652004AFD81 /* main.m in Sources */,
@@ -397,6 +423,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E9B04E1E71CB34004AFD81 /* runtime_test.mm in Sources */,
+				227843931EB126A600400AA8 /* runtime_test3.m in Sources */,
+				221626F61EAA076F00DED206 /* runtime_test2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
